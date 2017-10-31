@@ -15,7 +15,9 @@ import * as firebase from 'firebase';
   
   const database = firebase.database();
 
- export {firebase, database as default};
+  const googleAuthProvider = new firebase.auth.GoogleAuthProvider();
+
+ export {firebase, googleAuthProvider, database as default};
 
 //  "AIzaSyAdysvEhLq0AIkgo1x_yKaO-qr9Nr7AwFw"
 //  "react-expensify.firebaseapp.com" 
